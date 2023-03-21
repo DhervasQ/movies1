@@ -1,0 +1,344 @@
+{
+	"info": {
+		"_postman_id": "8c174dcf-eb6a-4b6c-9fa3-32c85978afb8",
+		"name": "Peliculas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20052450"
+	},
+	"item": [
+		{
+			"name": "get-pelicula",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5500/peliculas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"peliculas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPeliculaPorId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5500/peliculas/id/6418b63a4b5ec6d1e9b3320b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"peliculas",
+						"id",
+						"6418b63a4b5ec6d1e9b3320b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPeliculaTitulo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "titulo",
+							"value": "Interestelar",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5500/peliculas/titulo/Interestelar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"peliculas",
+						"titulo",
+						"Interestelar"
+					],
+					"query": [
+						{
+							"key": "Interestelar",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPeliculaGenero",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5500/peliculas/genero/Acción",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"peliculas",
+						"genero",
+						"Acción"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPeliculaFechaEstreno",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "postPeliculas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Coco",
+							"type": "text"
+						},
+						{
+							"key": "director",
+							"value": "Lee Unkrich, Adrian Molina",
+							"type": "text"
+						},
+						{
+							"key": "year",
+							"value": "2017",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": "Animacion",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5500/peliculas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"peliculas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putPeliculas",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Finding Nemo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5500/peliculas/6418b63a4b5ec6d1e9b3320e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"peliculas",
+						"6418b63a4b5ec6d1e9b3320e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delPeliculas",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5500/peliculas/6418b63a4b5ec6d1e9b33210",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"peliculas",
+						"6418b63a4b5ec6d1e9b33210"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCinema",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5500/cinema/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"cinema",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCinemaById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5500/cinema/id/641997627677e6a8c714f015",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"cinema",
+						"id",
+						"641997627677e6a8c714f015"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postCinema",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"CINESA LUXE OASIZ\",\r\n    \"location\": \"Madrid\",\r\n    \"movies\": [\"6418b63a4b5ec6d1e9b3320d\",\"6418b63a4b5ec6d1e9b3320e\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5500/cinema/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"cinema",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putCinema",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "CINESA PARQUESUR · IMAX",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5500/cinema/641997627677e6a8c714f015",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"cinema",
+						"641997627677e6a8c714f015"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delCinema",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5500/cinema/6419cc2d2a4a950c98315acb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"cinema",
+						"6419cc2d2a4a950c98315acb"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
